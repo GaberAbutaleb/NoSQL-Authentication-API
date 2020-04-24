@@ -1,0 +1,104 @@
+version: 1
+
+dn: uid=gsharma,ou=users,dc=example,dc=com
+objectClass: simpleSecurityObject
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+objectClass: top
+cn: gsharma
+sn: gsharma lastname
+userPassword: {SSHA}4sToDr/esCLDd+CTF37QfvhvRqulnTwGeawMbw==
+displayName: gsharma lastname
+uid: gsharma
+
+dn: ou=engineering,ou=groups,dc=example,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: engineering
+uniqueMember: employeeNumber=1,ou=users,dc=example,dc=com
+ou: engineering
+
+dn: uid=gaber,ou=people,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+objectClass: top
+cn: gaber
+sn: gaber
+uid: gaber
+userPassword: {SHA}Ib0S3Bg/dA7nbye3jrOcitlyp1c=
+
+dn: dc=example,dc=com
+objectclass: domain
+objectclass: top
+dc: example
+
+dn: ou=support,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: support
+description: this is support support team
+
+dn: uid=useruser,ou=users,dc=example,dc=com
+objectClass: simpleSecurityObject
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+objectClass: top
+cn: u
+sn: u
+userPassword: {SHA}QL0AFWMIX8NRZTKeof9cXsvbvu8=
+uid: useruser
+
+dn: uid=newuser,ou=users,dc=example,dc=com
+objectclass: simpleSecurityObject
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+objectclass: top
+cn: newuserfirstname2
+sn: newuserlastname
+userPassword: {SSHA}LuZZIWyy4FIIMNFcDBmEslOrzbOTgBENIjJMRw==
+displayName: newuser
+ou: ou=engineering,ou=groups,dc=example,dc=com
+ou: ou=Adminstration,ou=groups,dc=example,dc=com
+uid: newuser
+
+dn: ou=groups,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: groups
+description: groups
+
+dn: ou=users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: users
+description: This is Group of users
+
+dn: uid=sha,ou=users,dc=example,dc=com
+objectClass: simpleSecurityObject
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+objectClass: top
+cn: sha
+sn: sha
+userPassword: {SSHA}U/NPhuPSp1KBYN98zfg3xOQSwsb/e0Hqf+ssPw==
+ou: ou=Adminstration,ou=groups,dc=example,dc=com
+ou: ou=engineering,ou=groups,dc=example,dc=com
+uid: sha
+
+dn: ou=newGroup,dc=example,dc=com
+objectclass: organizationalUnit
+objectclass: top
+ou: newGroup
+description: This is new Group2
+
+dn: ou=people,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: people
+description: they are people
+
